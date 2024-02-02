@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Upload</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .main-header {
+    background-color: #1D74C1;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sub-header {
+    background-color: white;
+    padding: 10px;
+    color: #0818A8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .header-buttons button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .logo-container {}
+  .logo {
+    max-width: 200px;
+    height: auto;
+  }
+ .upload-button {
+    background-color: #1D74C1;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 15px 50px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .footer {
+    background-color: #1D74C1;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+  }
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .text-box {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  button[type="submit"] {
+    background-color: #1D74C1; 
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .footer-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: #1D74C1;
+  color: #fff;
+  padding: 20px;
+}
+
+.featured-links, .contact-us, .copyright {
+  width: 30%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+
+<header class="sub-header">
+  <div class="logo-container">
+    <img src="websitelogo2.png" alt="Website Logo" class="logo">
+  </div>
+  <div class="header-buttons">
+    <button class="upload-button">Upload</button>
+  </div>
+</header>
+<header class="main-header">
+  <div class="header-buttons">
+    <button></button><button></button><button></button><button></button><button></button><button></button><button></button>
+    <button></button><button></button><button></button><button></button><button></button><button></button><button></button>
+    <button></button><button></button><button></button><button></button><button></button><button></button><button></button>
+    <button></button><button></button><button></button><button></button><button></button><button></button><button></button>
+    <button></button><button></button><button></button><button></button><button></button><button></button><button></button>
+    <button></button><button></button><button></button><button></button><button></button><button></button><button></button>
+    <button></button><button></button><button></button><button></button><button></button><button></button><button></button>
+    <button>Home</button>
+    <button>Dashboard</button>
+    <button>My Profile</button>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <h2>Upload File</h2>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+      <label for="file">Choose a file:</label>
+      <input type="file" id="file" name="file" accept=".pdf, .doc, .docx">
+      <br><br>
+      <label for="filename">Rename file:</label>
+      <input type="text" id="filename" name="filename">
+      <br><br>
+      <button type="submit">Upload</button>
+    </form>
+  </div>
+  <div class="text-box">
+    <ul>
+    <li><b>Ensure that the content you upload is appropriate and relevant to academic purposes.</li></b>
+    <li><b>Respect intellectual property rights and avoid uploading copyrighted material without permission.</li></b>
+    <li><b>Provide clear and descriptive filenames for your uploads to help other students easily identify the content.</li></b>
+  </ul>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-container">
+    <div class="featured-links">
+      <h3>Featured Links</h3>
+      <ul>
+       <li><a href="index01.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  
+    <div class="contact-us">
+      <h3>Contact Us</h3>
+      <b><p>Email:<a href="mailto:npapersinquiries@gmail.com">npapersinquiries@gmail.com</a></p>
+      <p>Phone: <a href=tel:+94770186906">(+94)770186906</a></p>
+      <p>Address: <a href="https://www.google.com/maps/place/NSBM+Green+University/@6.8457414,79.7977544,11z/data=!4m10!1m2!2m1!1snsbm+address!3m6!1s0x3ae2523b05555555:0x546c34cd99f6f488!8m2!3d6.8213291!4d80.0415729!15sCgxuc2JtIGFkZHJlc3MiAkgBkgEKdW5pdmVyc2l0eeABAA!16s%2Fg%2F11h1p1w53r?entry=ttu"> Mahenwaththa, Pitipana, Homagama, Sri Lanka</a>
+      </p></b>
+    </div>
+
+    <div class="copyright">
+      <p>&copy; Copyright by Npapers 2024. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
